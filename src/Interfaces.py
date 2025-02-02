@@ -35,6 +35,7 @@ class Interface:
         self.ipv4 = ipv4
         self.link_type = None
         self.connected_to = None
+        self.arp_table = {}
 
     def connect(self, interface: 'Interface', link_type: LinkType):
         self.connected_to = interface
